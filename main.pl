@@ -40,9 +40,9 @@ my $IRCBot = MyBot->new
     ssl   => $irc_ssl,
     channels => [$irc_chan],
     nick      => $irc_user,
-    alt_nicks => ["yumoreski_", "yumoreski!"],
-    username  => "Yumoreski",
-    name      => "Bot for yumoreskis!",
+    alt_nicks => [$irc_user."_", $irc_user."!"],
+    username  => "VKBot",
+    name      => "Bot for vk groups!",
  ) or die "Can't connect\n";
 
 
